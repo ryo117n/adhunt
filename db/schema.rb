@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_28_170614) do
+ActiveRecord::Schema.define(version: 2018_10_28_171724) do
 
   create_table "advertisers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 2018_10_28_170614) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "comment"
-    t.string "text"
     t.integer "cr_type"
     t.integer "user_id"
     t.integer "advertiser_id"
