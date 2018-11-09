@@ -16,6 +16,7 @@ default: &default
   username: root
   password: sartre
   host: localhost
+  # socket: /tmp/mysql.sock
 
 development:
   <<: *default
