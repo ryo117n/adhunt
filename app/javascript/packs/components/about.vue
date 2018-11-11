@@ -1,3 +1,5 @@
+<!-- component: About -->
+
 <template>
   <div>
     <!-- 内容はお好みで -->

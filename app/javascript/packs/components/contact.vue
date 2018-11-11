@@ -1,3 +1,5 @@
+<!-- component: Contact -->
+
 <template>
   <div>
     <!-- 内容はお好みで -->

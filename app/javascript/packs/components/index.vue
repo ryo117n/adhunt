@@ -1,3 +1,5 @@
+<!-- component: Index -->
+
 <template>
   <div>
     <!-- 新規作成部分 -->
