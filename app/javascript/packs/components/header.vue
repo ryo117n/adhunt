@@ -26,3 +26,9 @@
     </nav>
   </div>
 </template>
+
+<style lang='CSS' scoped>
+  nav{
+    margin-bottom: 100px;
+  }
+</style>

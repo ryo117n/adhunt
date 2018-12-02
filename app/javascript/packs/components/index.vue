@@ -1,7 +1,5 @@
-<!-- component: Index -->
-
 <template>
-  <div>
+  <div class='hofe'>
     <!-- 新規作成部分 -->
     <!-- <div class="row">
       <div class="col s10 m11">
@@ -39,3 +37,9 @@
     },
   }
 </script>
+
+<style lang="scss" scoped>
+  .hofe{
+    background-color: black;
+  }
+</style>

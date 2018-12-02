@@ -4,7 +4,3 @@ $primary-color: color("red", "accent-3") !default;
 $secondary-color: color("red", "base") !default;
 @import 'materialize';
 @import 'material_icons';
-
-nav{
-  margin-bottom: 20px;
-}
