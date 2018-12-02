@@ -3,7 +3,7 @@
 <template>
   <div>
     <!-- 新規作成部分 -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col s10 m11">
         <input class="form-control" placeholder="Add your task!!">
       </div>
@@ -12,53 +12,30 @@
           <i class="material-icons">add</i>
         </div>
       </div>
-    </div>
-    <!-- リスト表示部分 -->
-    <div>
-      <ul class="collection">
-        <li v-for="task in tasks" v-if="!task.is_done" v-bind:id="'row_task_' + task.id" class="collection-item">
-          <input type="checkbox" v-bind:id="'task_' + task.id" />
-          <label v-bind:for="'task_' + task.id">{{ task.name }}</label>
-        </li>
-      </ul>
-    </div>
-    <!-- 完了済みタスク表示ボタン -->
-    <div class="btn">Display finished tasks</div>
+    </div> -->
+
+    <!-- 投稿一覧 -->
+    <post-list></post-list>
+
     <!-- 完了済みタスク一覧 -->
-    <div id="finished-tasks" class="display_none">
+    <!-- <div id="finished-tasks" class="display_none">
       <ul class="collection">
         <li v-for="task in tasks" v-if="task.is_done"v-bind:id="'row_task_' + task.id" class="collection-item">
           <input type="checkbox" v-bind:id="'task_' + task.id" checked="checked" />
           <label v-bind:for="'task_' + task.id"  class="line-through">{{ task.name }}</label>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
- import axios from 'axios';
+  import axios from 'axios';
+  import PostList from '../components/post-list.vue'
 
- export default {
-   data: function () {
-     return {
-       tasks: [],
-       newTask: ''
-     }
-   },
-   mounted: function () {
-     this.fetchTasks();
-   },
-   methods: {
-     fetchTasks: function () {
-       axios.get('/api/tasks').then((response) => {
-         for(var i = 0; i < response.data.tasks.length; i++) {
-           this.tasks.push(response.data.tasks[i]);
-         }
-       }, (error) => {
-         console.log(error);
-       });
-     },
-   }
- }
+  export default {
+    components: {
+      'post-list': PostList,
+    },
+  }
 </script>

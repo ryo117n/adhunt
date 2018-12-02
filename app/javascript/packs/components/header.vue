@@ -9,7 +9,7 @@
 
     <nav>
       <div class="nav-wrapper container">
-        <a href="/" class="brand-logo left">Todo Application</a>
+        <a href="/" class="brand-logo left">AdHunt</a>
         <ul class="right hide-on-med-and-down">
           <li><router-link to="/">Top</router-link></li>
           <li><router-link to="/about">About</router-link></li>
